@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Actividad</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/estilos.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/menu.css'>
+        <!--<script src='main.js'></script>-->
+    </head>
+    <body>
+        <!--Inicia nuestro menu de la pagina-->
+        <nav>
+              <ul class="menu">
+                    <li class="logo"> 
+                        <a href="#"> 
+                            <!--Imagen del logo-->       
+                            <img src="./Imagenes/logo.png"> 
+                        </a> 
+                     </li>
+                    <li> <a href="./index.html">Inicio</a> </li>
+                    <li> <a href="./Contactenos.html">Contactenos</a> </li>
+                </ul>
+         </nav>
+                   
+            <div class="container">
+                        <h1>Formulario principal</h1>  
+            
+                <!--Inicia Formulario-->
+                <div>
+                    <form>
+                        <div class="section-flex">
+                           <div class="elemnt-form">
+                               <div class="label">
+                                <label for="type">Tipo de Mensaje</label>
+                               </div>
+                               <select id="type" name="type" required>
+                                <option value="">Seleccione una opcion</option>
+                                <option value="Cotizacion">Cotizacion</option>
+                                <option value="Saludo">Saludo</option>
+                                <option value="queja">Queja</option>
+                               </select>
+                            </div>
+
+                           <div class="elemnt-form">
+                                <div class="label">
+                                    <label for="email"> email</label>
+                                 </div> 
+                                <input type="text" id="email" name="email" placeholder="example@correo.com" required>
+                           </div>
+
+                         <div class="elemnt-form">
+                                <div class="label">
+                                    <label for="Celular">celular</label>
+                                 </div> 
+                                <input type="text" id="celular" name="celular" placeholder="ingrese su celular" required> 
+                        </div>
+
+                        <div class="elemnt-form">
+                            <div class="label">
+                                <label for="Coment"> comentario</label>
+                            </div> 
+
+                             <textarea
+                                id="coment" name="coment" placeholder="ingrese su comentario" required>
+                             </textarea>          
+                        </div>
+
+                        <div class="elemnt-form">
+                        <div>
+                            <label> que estudias? </label>
+                        </div>
+                        <input type="checkbox" id= "chk1" name ="chk1" value="html"> HTML
+                        <input type="checkbox" id= "chk2" name ="chk2" value="css"> css
+                        <input type="checkbox" id= "chk3" name ="chk3" value="php"> PHP
+
+                        </div>
+
+                        <div class="elemnt-form">
+                            <div>
+                                <label> que estudias? </label>
+                            </div>
+                            <input type="radio" id= "Radios1" name ="radi1" value="html"> HTML
+                            <input type="radio" id= "Radios2" name ="radi2" value="css"> css
+                            <input type="radio" id= "Radios3" name ="radi3" value="php"> PHP
+    
+                         </div>
+
+
+                       <div class="btn-div">
+                           <button type= "submit"> Enviar datos </button>
+                       </div>
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+                <footer>
+                        <P>Creado por Javier Rodriguez</P>
+                </footer>
+
+          </body>
+</html>
